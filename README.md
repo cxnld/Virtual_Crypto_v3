@@ -17,7 +17,7 @@ User information is modeled by Mongoose and stored in MongoDB Atlas.<br />
 Orders are translated into queries that update the users information.<br />
 
 #### Screenshots:
-![virtual_crypto_demo](https://user-images.githubusercontent.com/51012924/114653034-03f2b100-9c9c-11eb-8158-14b9abd2c897.gif)
+![2021-04-14-12-49-14](https://user-images.githubusercontent.com/51012924/114771116-0ea35980-9d21-11eb-953f-db9fee5381a5.gif)
 ![Alt text](screenshots/1.PNG)
 ![Alt text](screenshots/2.PNG)
 ![Alt text](screenshots/3.PNG)
