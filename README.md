@@ -10,10 +10,11 @@
 **Material UI** for pre-made component styling.<br />
 
 #### Backend Features:
-The backend consists of a RESTful API that handles incoming requests from the frontend.<br />
-User information is modeled by Mongoose and stored in MongoDB Atlas.<br />
+A RESTful API handles incoming requests from the frontend.<br />
 User password is hashed with bcrypt.<br />
 JSON Web Tokens are used to authenticate the user each time they login.<br />
+User information is modeled by Mongoose and stored in MongoDB Atlas.<br />
+Orders are translated into queries that update the users information.<br />
 
 #### Screenshots:
 ![virtual_crypto_demo](https://user-images.githubusercontent.com/51012924/114653034-03f2b100-9c9c-11eb-8158-14b9abd2c897.gif)
