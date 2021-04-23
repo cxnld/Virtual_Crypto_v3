@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 import { useSelector, useDispatch } from 'react-redux'
-import { populatePortfolio } from '../../../redux/actions'
+import { populate } from '../../../redux_toolkit/portfolioSlice'
 
 import { makeStyles } from '@material-ui/core/styles'
 import Button from '@material-ui/core/Button'
@@ -132,7 +132,7 @@ const BuySell = ({ coinInfo }) => {
                     equity: equity,
                     coins: coins
                 }
-                dispatch(populatePortfolio(portfolioData))
+                dispatch(populate(portfolioData))
             })
         })
     }

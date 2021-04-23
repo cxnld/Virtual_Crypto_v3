@@ -5,7 +5,7 @@ import MyCoins from './MyCoins'
 import CoinInfo from '../Browse/CoinInfo/CoinInfo'
 
 import { useSelector, useDispatch } from 'react-redux'
-import { populatePortfolio } from '../../redux/actions'
+import { populate } from '../../redux_toolkit/portfolioSlice'
 
 import { makeStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
@@ -70,7 +70,7 @@ const Portfolio = () => {
                     equity: equity,
                     coins: coins
                 }
-                dispatch(populatePortfolio(portfolioData))
+                dispatch(populate(portfolioData))
             })
         })
     }, [jwt, dispatch])

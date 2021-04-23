@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
 
 import { useDispatch } from 'react-redux'
-import { sign_in } from '../../redux/actions'
+import { sign_in } from '../../redux_toolkit/isLoggedSlice'
 
 
 const useStyles = makeStyles({

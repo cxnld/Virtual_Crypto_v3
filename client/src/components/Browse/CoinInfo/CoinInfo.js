@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 import axios from 'axios'
 import { useSelector, useDispatch } from 'react-redux'
-import { set_browse_sidebar } from '../../../redux/actions'
+import { set_browse_sidebar } from '../../../redux_toolkit/browseSidebarSlice'
 
 import BuySell from './BuySell'
 

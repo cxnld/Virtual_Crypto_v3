@@ -5,7 +5,7 @@
 #### Frontend Features:
 **ReactJS** as main framework.<br />
 **React-router-dom** maintains routing.<br />
-**Redux** manages global state around the application.<br />
+**Redux** manages global state around the application. Currently using Redux Toolkit.<br />
 **Axios** sends HTTP requests to third-party APIs as well as our own server.<br />
 **Material UI** for pre-made component styling.<br />
 

@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux'
-import { set_browse_sidebar } from '../../redux/actions'
+import { set_browse_sidebar } from '../../redux_toolkit/browseSidebarSlice'
 
 import { makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
 const CoinTable = () => {
     const classes = useStyles()
     const dispatch = useDispatch()
-    const coins = useSelector(state => state.browse)
+    const coins = useSelector(state => state.browse.coins)
 
     return (
         <Table>

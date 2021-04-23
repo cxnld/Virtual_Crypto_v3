@@ -10,7 +10,10 @@ import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 import { useDispatch } from 'react-redux'
-import { sign_out, populatePortfolio, set_browse_sidebar, populate } from '../redux/actions'
+import { sign_out } from '../redux_toolkit/isLoggedSlice'
+import { populate as populatePortfolio } from '../redux_toolkit/portfolioSlice'
+import { populate as populateBrowse } from '../redux_toolkit/browseSlice'
+import { set_browse_sidebar } from '../redux_toolkit/browseSidebarSlice'
 
 const useStyles = makeStyles((theme) =>
     createStyles({
@@ -36,7 +39,7 @@ const Nav = () => {
         dispatch(sign_out())
         dispatch(populatePortfolio({ cash: 0, equity: 0, coins: [] }))
         dispatch(set_browse_sidebar({ display: false, coin_id: null }))
-        dispatch(populate([]))
+        dispatch(populateBrowse([]))
     }
 
     return (

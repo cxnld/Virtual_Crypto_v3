@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { populate } from '../../redux/actions'
+import { populate } from '../../redux_toolkit/browseSlice'
 
 import CoinTable from './CoinTable'
 import CoinInfo from "./CoinInfo/CoinInfo"
